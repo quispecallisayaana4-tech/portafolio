@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    background-color: #ffe3ff;  
+}
+
+/*Header*/
+header {
+    background-color: #580058;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/*Navr*/
+nav {
+    background-color: #891889;
+    color: white;
+    padding: 10px;
+    text-align: center;  
+}
+
+/*Nav a*/
+nav a {
+   color: white;
+   text-decoration: none;
+   margin: 0 10px;
+   font-weight: bold;
+    
+    
+}
+section {
+    display: flex; /*Activa Flexbox*/ 
+    justify-content: space-between; /*Espacios entre las secciones osea div*/ 
+    gap: 20px; /*Espacios uniforme entre las secciones*/ 
+    padding: 20px; 
+    flex-wrap: 20px; /*Permite que las secciones se apilen*/ 
+}
+
+ /*Clases para estilo general para todas las secciones*/
+.izquierda,
+.centro,
+.derecha {
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box; /*Asegura que el padding no afecte el ancho total*/ 
+}
+
+/*Estilo Secciòn izquierda*/
+.izquierda{
+   flex: 1; /*Ocupa una parte del espacio*/  
+   background-color: #ffffff; /*color de fondo*/
+}
+
+/*Estilo Secciòn central*/
+.centro{
+   flex: 2; /*Ocupa el doble del espacio*/  
+   background-color: #d11cd1; /*color de fondo*/
+   box-shadow: 0 2px 5px #303330;
+}
+
+/*Estilo Secciòn derechal*/
+.derecha{
+   flex: 1; /*Ocupa una parte del espacio*/  
+   background-color: #ff9fff; /*Rosa bajo*/    
+}
+  
+iframe {
+   width: 100%;
+   height: 700px;  
+   border: none;
+   border-radius: 8px;   
+}
+
+/*footer*/
+footer {
+    background-color: #580058;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%; 
+}
+
+/*Diseño responsivo*/
+@media (max-width: 768px) {
+  .izquierda,
+  .centro,
+  .derecha{  
+    flex: 1 1 100%; /* Cada sección ocupa el 100% del ancho */
+    margin-bottom: 5px; /* Espaciado entre secciones apiladas */
+}
+
